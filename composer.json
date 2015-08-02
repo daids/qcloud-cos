@@ -2,6 +2,7 @@
     "name": "daids/qcloud-cos",
     "description": "qcloud cos api",
     "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "daids",
