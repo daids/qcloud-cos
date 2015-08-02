@@ -18,11 +18,11 @@ class CosApi
 	}
 
 
-	public function getSign($expired)
+	public function getSign($fileId, $bucketName, $expired)
 	{
 		$now = time();
         $rdm = rand();
-        $plainText = "a=$appId&k=$secretId&e=$expired&t=$now&r=$rdm&f=$fileId&b=$bucketName";
+        $plainText = "a=$this->appId&k=$this->secretId&e=$expired&t=$now&r=$rdm&f=$fileId&b=$bucketName";
         $bin = hash_hmac('SHA1', $plainText, $this->secretKey, true);
         $bin = $bin.$plainText;
         $sign = base64_encode($bin);
