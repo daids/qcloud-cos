@@ -1,0 +1,17 @@
+{
+    "name": "daids/qcloud-cos",
+    "description": "qcloud cos api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "daids",
+            "email": "daids@mail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Daids\\QcloudCos\\": "src/"
+        }
+    },
+}
