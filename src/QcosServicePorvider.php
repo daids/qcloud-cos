@@ -9,7 +9,7 @@ class QcosServicePorvider extends ServiceProvider
 	
 	public function register()
 	{
-		$this->app->singleton('qcloud.cos', function($app){
+		$this->app->bind('qcloud.cos', function($app){
 			return new CosApi($app->config);
 		});
 	}
